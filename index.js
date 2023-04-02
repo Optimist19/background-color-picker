@@ -7,7 +7,7 @@ let btn = document.getElementById('btn')
 
 
 
-btn.addEventListener("click", function(){
+btn.addEventListener("click", function(e){
 	
 	let randomNumber = randomColor()
 	console.log(randomNumber)
@@ -20,3 +20,4 @@ btn.addEventListener("click", function(){
 function randomColor(){
 	return Math.floor(Math.random() * colors.length)
 }
+
